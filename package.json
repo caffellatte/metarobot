@@ -1,0 +1,36 @@
+{
+  "name": "metarobot",
+  "version": "0.0.0",
+  "description": "url storage",
+  "repository": {
+    "url": "caffellatte/metarobot",
+    "type": "git"
+  },
+  "main": "index.js",
+  "scripts": {
+    "dev": "supervisor -x micro-bot index.js",
+    "start": "micro-bot",
+    "now-start": "micro-bot -e",
+    "lint": "eslint .",
+    "test": "npm run lint"
+  },
+  "engines": {
+    "node": ">=8.5.0"
+  },
+  "author": "caffellatte <m.g.lutsenko@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "deep-equal": "^1.0.1",
+    "micro-bot": "^2.5.1",
+    "rethinkdb": "^2.3.3"
+  },
+  "devDependencies": {
+    "eslint": "^5.9.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^8.0.0",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "supervisor": "^0.12.0"
+  }
+}
